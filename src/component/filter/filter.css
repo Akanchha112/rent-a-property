@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+.filter_container{
+    height: 200px;
+    margin: 1% 1%;
+    background-color: rgb(237, 235, 246);
+    padding: 0px 22px;
+}
+
+.searchbar_filter-wrap{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.searchbar_filter-wrap h1{
+    font-size: 38px;
+    color: black;
+}
+.dropdown_filter-wrap{
+    height: 50%;
+   
+    
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+    grid-column-gap:0.5rem;
+    align-content: center;
+   justify-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0px 20px;
+}
+.location{
+    position: relative;
+}
+.dropdown {
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(130, 130, 130);
+    position: absolute;
+    z-index: 1000;
+  }
+  
+  .dropdown:empty {
+    border: none;
+  }
+  
+  .dropdown-row {
+    cursor: pointer;
+    text-align: start;
+    padding: 0px 4px;
+  }
+.input-box{
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.wrap-text{
+    padding-left: 2px;
+    margin-bottom: 6px;
+    
+    font-weight: 600;
+    color: rgb(130, 130, 130);
+}
+.srch-btn-wrap{
+    /* width: 120px; */
+    
+}
+.srch-btn-wrap button{
+    margin-top: 12px;
+    width: 90px;
+    height: 40px;
+    border-radius: 6px;
+    border: 0;
+    background-color: rgb(93, 63, 231);
+    color: white;
+    transition: all 0.3s;
+}
+.srch-btn-wrap button:hover{
+    background-color:white ;
+    color: rgb(93, 63, 231);
+    border: 1px solid rgb(93, 63, 231);
+    font-weight: 600;
+}
+
+@media only screen and (max-width:1280px){
+    .input-box{
+        width: 160px;
+        height: 25px;
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+    }
+    .srch-btn-wrap{
+        width: 100px;
+        
+    }
+    .srch-btn-wrap button{
+        width: 80px;
+        
+    }
+}
+@media only screen and (max-width:840px){
+    .filter_container{
+        margin: 1% 0%;
+        padding: 0px 10px;
+    }
+    .searchbar_filter-wrap h1{
+        font-size: 34px;
+        color: black;
+    }
+    .input-box{
+        width: 130px;
+        height: 25px;
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+    }
+    .srch-btn-wrap{
+        width: 60px;
+        
+    }
+    .srch-btn-wrap button{
+        width: 60px;
+        height: 35px;
+    }
+}
+@media only screen and (max-width:690px){
+    .dropdown_filter-wrap{
+        height: 60%;
+    }
+    .searchbar_filter-wrap{
+        height: 40%;
+    }
+    .searchbar_filter-wrap h1{
+        font-size: 30px;
+    }
+}
