@@ -1,8 +1,10 @@
  # Rent-a-Property
 
-### Details
 
 This is a react app where user can search for rental properties according to their requirements.
+
+
+### Details
 
 They can apply filter on:
 -location: New York, California, Savannah GA
